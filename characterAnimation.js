@@ -10,11 +10,20 @@ function animate_one_row(obj){
 		elm.setAttribute('style',`background: url(${obj.img}) ${left}px 0px no-repeat;`);
 	},obj.timer)
 }
+/*EX: 
+	animate_one_row({
+		id: 'img1',
+		x: 185,
+		x_slides: 8,
+		timer: 100,
+		img: './sprites/capguy-walk.png' 
+	});
+*/
 
 
 
 
-
+//----------------------------------------------------------
 // Two Levels
 function animate_full_sprite(obj){
 	var elm = document.getElementById(obj.id);
@@ -31,10 +40,23 @@ function animate_full_sprite(obj){
 		elm.setAttribute('style',`background: url(${obj.img}) ${left}px ${top}px no-repeat;`);
 	},obj.timer)
 }
+/*EX: 
+	animate_full_sprite({
+		id: 'img3',
+		x: 180,
+		y: 340,
+		x_slides: 9,
+		y_slides: 8,
+		timer: 100,
+		img: './sprites/player-running.png' 
+	});
+*/
 
 
 
 
+
+//----------------------------------------------------------
 //automatic two levels. same as the previous but without the need to define x & y. it will get defined automatically.
 function auto_animate_full_sprite(obj){
 	var elm = document.getElementById(obj.id);
@@ -68,3 +90,13 @@ function auto_animate_full_sprite(obj){
 		},obj.timer)
 	}
 }
+/*EX: 
+	auto_animate_full_sprite({
+		id: 'img6',
+		x_slides: 16,
+		y_slides: 16,
+		timer: 80,
+		img: './sprites/actionstashhd.png'
+	});
+*/
+
