@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+
+	body{
+		color:white;
+		background-color: #222;
+		background: rgb(10,56,73);
+		background: -moz-linear-gradient(90deg, rgb(10,56,73) 10%, rgb(33,103,98) 90%);
+		background: -webkit-linear-gradient(90deg, rgb(10,56,73) 10%, rgb(33,103,98) 90%);
+		background: -o-linear-gradient(90deg, rgb(10,56,73) 10%, rgb(33,103,98) 90%);
+		background: -ms-linear-gradient(90deg, rgb(10,56,73) 10%, rgb(33,103,98) 90%);
+		background: linear-gradient(90deg, rgb(10,56,73) 10%, rgb(33,103,98) 90%);		
+
+		font-family: tahoma;
+		text-align: center;
+		font-size: 150%;		
+	}
+
+	img{
+	    border:0;
+	}
+
+	#container{
+		width:800px;
+		margin:0 auto;
+		margin-bottom: 200px;
+	}
+
+.hidden{
+	visibility: hidden;
+}
+
+
+	</style>
+
+</head>
+<body>
+
+
+<h1>CSS Sprites Character Animation</h1>
+
+<div id='container'>
+	<h3>Animate to Left</h3>	
+		<img id='img1' width='180' height='330'/>
+		<img id='img2' width='105' height='250'/>
+<hr/>
+	<h3>Animate To left & down</h3>	
+		<img id='img3' width='180' height='340'/>
+		<img id='img4' width='180' height='340'/>
+		<img id='img5' width='255' height='310'/>
+<hr/>
+	<h3>Automated Animation</h3>	
+		<img id='img6'/>	
+		<img id='img7'/>
+		<img id='img8'/>
+		<img id='img9'/>
+</div>
+
+
+
+
+<script type="text/javascript" src='./characterAnimation.js'></script>
+<script type="text/javascript">
+
+
+//-------------------------Animate One Row-------------------------------------
+$obj1= {
+	id: 'img1',
+	x: 185,
+	x_slides: 8,
+	timer: 100,
+	img: './sprites/capguy-walk.png' 
+}
+animate_one_row($obj1);
+
+
+$obj2= {
+	id: 'img2',
+	x: 105,
+	x_slides: 11,
+	timer: 100,
+	img: './sprites/jude-walks.jpg' 
+}
+animate_one_row($obj2);
+
+
+
+
+
+
+//--------------------------Two Levels-------------------------------------
+$obj3= {
+	id: 'img3',
+	x: 180,
+	y: 340,
+	x_slides: 9,
+	y_slides: 8,
+	timer: 100,
+	img: './sprites/player-running.png' 
+}
+animate_full_sprite($obj3);
+
+$obj4= {
+	id: 'img4',
+	x: 180,
+	y: 340,
+	x_slides: 9,
+	y_slides: 8,
+	timer: 80,
+	img: './sprites/player-running.jpg' 
+}
+animate_full_sprite($obj4);
+
+
+$obj5= {
+	id: 'img5',
+	x: 256,
+	y: 308,
+	x_slides: 8,
+	y_slides: 5,
+	timer: 80,
+	img: './sprites/mickey-sprite.png' 
+}
+animate_full_sprite($obj5);
+
+
+
+
+
+
+//---------------------------------Animate Three Levels------------------------------------
+$obj6= {
+	id: 'img6',
+	x_slides: 16,
+	y_slides: 16,
+	timer: 80,
+	img: './sprites/actionstashhd.png'
+}
+auto_animate_full_sprite($obj6);
+
+$obj7= {
+	id: 'img7',
+	x_slides: 14,
+	y_slides: 10,
+	timer: 120,
+	img: './sprites/cowboy.png'
+}
+auto_animate_full_sprite($obj7);
+
+$obj8= {
+	id: 'img8',
+	x_slides: 10,
+	y_slides: 1,
+	timer: 150,
+	img: './sprites/sprite-steps.png'
+}
+auto_animate_full_sprite($obj8);
+
+$obj9= {
+	id: 'img9',
+	x_slides: 4,
+	y_slides: 4,
+	timer: 80,
+	img: './sprites/muybridge_race_horse_gallop.jpg'
+}
+auto_animate_full_sprite($obj9);
+
+
+
+
+</script>
+
+</body>
+</html>
