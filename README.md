@@ -38,7 +38,6 @@ here's the demo:-
     <img id='img1' width='180' height='340'/>
  
     //then in the script:-
-	animate_one_row({
 	animate_full_sprite({
 		id: 'img1',   //the id of the img elm
 		x: 180,       //the width for each item in the row
