@@ -5,6 +5,9 @@ here's the demo:-
 [Demo Website](http://ahmed-badawy.com/tests/css-sprites/CSS-Sprites-Character-Animation/index.html)
 
 
+[![Demo Image](./css.jpg)](http://ahmed-badawy.com/tests/css-sprites/CSS-Sprites-Character-Animation/index.html)
+
+
 
 ## Documentation: 
 
@@ -22,7 +25,8 @@ here's the demo:-
 		img: './sprites/capguy-walk.png'   //the image link
 	});
 
-    //notice that x & y in the code are the same width & height of any item in the image. 
+
+#### notice that x & y in the code are the same width & height of any item in the image. 
 
 
 ---
